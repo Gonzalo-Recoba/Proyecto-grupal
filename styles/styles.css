@@ -1,3 +1,139 @@
+/* --- Variables --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
 
+/* Colors */
+/* Mixins */
+/* --- Login/register/resetPass --- */
+/* --- Background Video --- */
+.login_container__video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.login_container__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Container form --- */
+.login_container__info {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container__info--form {
+  width: 80%;
+  height: 80%;
+  background-color: #c7c7c7;
+  padding: 12px;
+  border-radius: 4px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  /* --- logo --- */
+}
+.login_container__info--form .login_info__logo {
+  width: 100px;
+  height: 100px;
+}
+.login_container__info--form .login_info__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.login_container__info--form .login_info__logo img:hover {
+  transform: scale(1.05);
+}
+
+/* --- form --- */
+.login_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  gap: 12px;
+}
+
+/* paragraph */
+.login_form__paragraph {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* label */
+.login_form__label {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* input */
+.login_form__input {
+  width: 100%;
+  background-color: #c7c7c7;
+  border: 2px solid #828282;
+  padding: 12px;
+  border-radius: 4px;
+}
+.login_form__input:focus {
+  outline: none;
+  border: 2px solid #5f5f5f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* button */
+.login_form__button {
+  width: 100%;
+  background-color: #2e2e2e;
+  color: #c7c7c7;
+  padding: 12px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+}
+.login_form__button:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  background-color: #212121;
+}
+
+/* links */
+.login_info__link {
+  text-align: center;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 12px;
+  transition: transform 0.3s ease-out;
+}
+.login_info__link:hover {
+  transform: scale(1.03);
+}
+
+/* --- Media Queries --- */
+@media (min-width: 576px) {
+  .login_container__info--form {
+    max-width: 400px;
+    max-height: 550px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
