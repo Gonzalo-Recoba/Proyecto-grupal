@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AutoLux - Contacto</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="contact_header__container">
+            <div class="contact_header__container--bg">
+                <img
+                    src="../assets/images/contact_header.jpg"
+                    alt="imagend de audi"
+                />
+                <div class="opacity"></div>
+            </div>
+            <div class="contact_header__container--info">
+                <h1 class="title">Contacto</h1>
+            </div>
+        </header>
+        <main class="contact_form__container">
+            <form class="contact_form__container--form" action="#">
+                <h2>Realizar Consulta</h2>
+                <p class="paragraph">
+                    Desde AutoLux queremos asesorarte. Por favor complete el
+                    siguiente formulario y nos pondremos en contacto con usted.
+                </p>
+                <!-- Inputs -->
+                <h2>Datos Personales</h2>
+                <div class="form__container--form_info">
+                    <div class="contact_form__container--input">
+                        <label for="name">Nombre *</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            required
+                            minlength="3"
+                            maxlength="20"
+                            pattern="[A-Za-z\s]+"
+                        />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="surname">Apellido *</label>
+                        <input
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            required
+                            minlength="3"
+                            maxlength="20"
+                            pattern="[A-Za-z\s]+"
+                        />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="tel">Celular *</label>
+                        <input
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            required
+                            placeholder="Ejemplo: +5493411231234"
+                            pattern="[0-9]+"
+                        />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
+                    <div class="contact_form__container--input">
+                        <label for="city">Ciudad *</label>
+                        <input
+                            type="text"
+                            name="city"
+                            id="city"
+                            required
+                            maxlength="30"
+                        />
+                    </div>
+                </div>
+                <!-- Select -->
+                <h2>Vehiculos</h2>
+                <div class="form__container--form_select">
+                    <label for="cars">Marca *</label>
+                    <select name="cars" id="cars" required>
+                        <option value="">
+                            Seleccionar marca de preferencia
+                        </option>
+                        <option value="Audi">Audi</option>
+                        <option value="Mercedez-Benz">Mercedez-Benz</option>
+                        <option value="Peugeot">Peugeot</option>
+                        <option value="BMW">BMW</option>
+                    </select>
+                </div>
+                <!-- Textarea -->
+                <h2>Mensaje</h2>
+                <div class="contact_form__container--textarea">
+                    <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Detalles de tu consulta *"
+                        required
+                        maxlength="1000"
+                    ></textarea>
+                    <p class="paragraph-xs">Máx. 1000 caracteres</p>
+                </div>
+                <!-- Checkbox -->
+                <p class="paragraph-xs">Términos y condiciones *</p>
+                <div class="contact_form__container--check">
+                    <input
+                        type="checkbox"
+                        name="checkbox"
+                        id="checkbox"
+                        required
+                    />
+                    <label for="checkbox"
+                        >Acepto el uso y almacenamiento de mis datos</label
+                    >
+                </div>
+                <!-- Terminos y condiciones -->
+                <p>
+                    Declaro haber sido informado conforme al artículo 6 de la
+                    Ley N° 25.326 sobre el carácter facultativo del presente
+                    formulario y sobre mi derecho a acceder, rectificar y
+                    suprimir los datos aquí consignados. Asimismo, declaro
+                    conocer y aceptar la política de privacidad de AutoLux. Los
+                    datos proporcionados serán almacenados en la base de datos
+                    de AutoLux S.R.L.
+                </p>
+                <p>
+                    El titular de los datos personales podrá ejercer
+                    gratuitamente el derecho de acceso a los mismos, en
+                    intervalos no menores a seis meses, salvo que se acredite un
+                    interés legítimo, mediante comunicación escrita dirigida a
+                    AutoLux S.R.L. (autolux@info.com.ar), en los términos del
+                    artículo 14, inciso 3, de la Ley 25.326.
+                </p>
+                <p>
+                    La Agencia de Acceso a la Información Pública, en su
+                    carácter de órgano de control de la Ley N° 25.326, tiene la
+                    facultad de atender denuncias y reclamos relacionados con el
+                    incumplimiento de las normas sobre protección de datos
+                    personales.
+                </p>
+                <p>
+                    Autorizo expresamente a AutoLux S.R.L., sus afiliadas,
+                    concesionarios y/o terceros autorizados, a utilizar mis
+                    datos personales con fines comerciales, incluyendo el envío
+                    de información publicitaria, promociones, invitaciones a
+                    eventos, encuestas de satisfacción o cualquier otro tipo de
+                    comunicación relativa a productos y servicios presentes o
+                    futuros.
+                </p>
+
+                <!-- Button -->
+                <div class="contact_form__container--button">
+                    <input type="submit" value="Enviar" />
+                </div>
+            </form>
+        </main>
+        <!-- Footer -->
+    </body>
+</html>
