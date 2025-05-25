@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AutoLux - Register</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/styles.css" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="login_container">
+            <div class="login_container__video">
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    src="../assets/videos/login_video.mp4"
+                >
+                    Tu navegador no soporta el video...
+                </video>
+            </div>
+            <section class="login_container__info">
+                <div class="login_container__info--form">
+                    <div class="login_info__logo">
+                        <a href="../index.html"><img src="../assets/images/AUTOLUX.png" alt="logo"></a>
+                    </div>
+                    <h3 class="login_info__title">Registrarse</h2>
+                    <form action="#" class="login_form">
+                        <label class="login_form__label" for="name">Nombre y Apellido</label>
+                        <input class="login_form__input" type="text" name="name" id="name" placeholder="Ingresa tu nombre y apellido" required />
+                        <label class="login_form__label" for="email">Correo Electrónico</label>
+                        <input class="login_form__input" type="email" name="email" id="email" placeholder="Correo electrónico" required />
+                        <label class="login_form__label" for="pass">Contraseña</label>
+                        <input class="login_form__input" type="password" name="pass" id="pass" placeholder="Contraseña nueva" required />
+                        <input class="login_form__button" type="button" value="Crear Cuenta" />
+                    </form>
+                    <a class="login_info__link" href="../pages/login.html">Ya tengo una cuenta</a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
