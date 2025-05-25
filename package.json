@@ -1,0 +1,13 @@
+{
+  "name": "proyecto-grupal",
+  "version": "1.0.0",
+  "description": "En un mercado donde la elegancia y la innovación definen las decisiones de compra, nace Autolux, una plataforma web diseñada para la comercialización de vehículos de alta gama. Este proyecto está dirigido a clientes exclusivos que buscan no solo calidad y prestigio, sino también una experiencia digital impecable y personalizada.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss styles/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,86 @@
+#mainNavigation{
+    top:0;
+    left:0;
+    width:100%;
+    padding-bottom:15px;
+    background-color: black;
+    color: map-get($map: $color, $key: "white") important;
+    nav{
+        a{
+            font-size:14px;
+            text-transform: uppercase;
+            letter-spacing:2px;
+            .logo{
+                width: 100px;
+                min-width: 50px;
+            }
+        }
+    }
+    .navbar-expand-md{
+        .navbar-toggler{
+            border: none;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+        .navbar-collapse{
+            background-color: black;
+        }
+        .nav-link{
+            margin-left: 10px;
+            color: map-get($map: $color, $key: "white");
+            border: none;
+            &:focus{
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .nav-item{
+        min-width:12vw;
+        border-bottom: 1px solid map-get($map: $color, $key: "principal");
+        @media (min-width: 768px){
+            border-bottom: none;
+        }
+        a{
+            text-align: left;
+            color: map-get($map: $color, $key: "white");
+            &:hover{
+                text-shadow: 5px 5px 10px map-get($map: $color,$key: "white");
+                transform: translateX(20px);
+                transition: transform 1.3s;
+}
+            @media (min-width: 768px){
+                text-align: center;
+                .nav-link{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    color: map-get($map: $color,$key: "white");
+                    transform: scale(1.2);
+                    transition: transform 1.3s;
+}
+            }
+        }
+        &:hover{
+            color: map-get($map: $color, $key: "white");
+        }
+    }
+    .perfil{
+        width: 2vw;
+        min-width: 30px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        font-size: 20px;
+        @media (min-width: 768px){
+            margin-top: 8px;
+            &:hover{
+                color: map-get($map: $color,$key: "white");
+                transform: scale(1.4);
+                transition: transform 1.3s;
+}
+        }
+    }
+}
