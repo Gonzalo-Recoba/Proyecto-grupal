@@ -6,7 +6,13 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif !important;
   font-style: normal;
-  color: white;
+}
+
+a {
+  color: #ffffff;
+}
+a:hover {
+  color: #ffffff;
 }
 
 #mainNavigation {
@@ -108,6 +114,7 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
+  color: #fff;
 }
 footer .redes-sociales, footer .pie-contacto {
   display: flex;
