@@ -1,0 +1,19 @@
+/* Estilo para reducir el tamaño del carrusel */
+.carousel-container {
+  max-width: 700px; /* Cambia este valor según lo pequeño que lo quieras */
+  margin: 10px auto; /* Centrado */
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner img {
+  height: 300px; /* Ajusta la altura deseada */
+  object-fit: cover; /* Para que la imagen no se deforme */
+  width: 100%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 75% 75%; /* Tamaño más pequeño de las flechas */
+}
